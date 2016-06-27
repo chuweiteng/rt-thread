@@ -3,7 +3,7 @@ import os
 # toolchains options
 ARCH='arm'
 CPU='cortex-m3'
-CROSS_TOOL='keil'
+CROSS_TOOL='gcc'
 
 if os.getenv('RTT_CC'):
 	CROSS_TOOL = os.getenv('RTT_CC')
@@ -25,10 +25,10 @@ RT_USING_LCD_TYPE = 'SSD1289'
 
 if  CROSS_TOOL == 'gcc':
 	PLATFORM 	= 'gcc'
-	EXEC_PATH 	= 'D:/SourceryGCC/bin'
+	EXEC_PATH 	= 'D:\Program Files (x86)\MentorGraphics\Sourcery_CodeBench_Lite_for_ARM_EABI\bin'
 elif CROSS_TOOL == 'keil':
 	PLATFORM 	= 'armcc'
-	EXEC_PATH 	= 'C:/Keil'
+	EXEC_PATH 	= 'D:\Program Files (x86)\Keil'
 elif CROSS_TOOL == 'iar':
 	PLATFORM 	= 'iar'
 	IAR_PATH 	= 'C:/Program Files/IAR Systems/Embedded Workbench 6.0 Evaluation'
