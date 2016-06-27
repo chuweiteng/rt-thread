@@ -21,3 +21,9 @@ documentation/html
 *.a
 *.i
 *.d
+
+#MDK
+*.ewp
+*.ewd
+*.uvopt
+
