@@ -25,7 +25,7 @@ RT_USING_LCD_TYPE = 'SSD1289'
 
 if  CROSS_TOOL == 'gcc':
 	PLATFORM 	= 'gcc'
-	EXEC_PATH 	= 'D:/Program Files (x86)/MentorGraphics/Sourcery_CodeBench_Lite_for_ARM_EABI\bin'
+	EXEC_PATH 	= 'D:/Program Files (x86)/MentorGraphics/Sourcery_CodeBench_Lite_for_ARM_EABI/bin'
 elif CROSS_TOOL == 'keil':
 	PLATFORM 	= 'armcc'
 	EXEC_PATH 	= 'D:/Program Files (x86)/Keil'
